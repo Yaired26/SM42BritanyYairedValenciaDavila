@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+#include <dos.h>
+void main()
+{
+	clrscr();
+
+	int _tabla, _numero;
+	_tabla = 1;
+	_numero = 1;
+	while (_tabla <= 10)
+	{
+		while (_numero <= 10)
+			printf("%d * %d = %dn", _tabla, _numero, _tabla * _numero);
+		_numero++;
+		delay(10);
+	}
+	printf("n");
+	_tabla++;
+	_numero = 2;
+	delay(300);
+}
+
+getch();
+}
